@@ -24,7 +24,7 @@ public class OneTestWebForm {
     void positiveTest() {
 
         open("/automation-practice-form");
-        $("#firstName").setValue("Liza");
+        $("#firstName").setValue("Liza");   //use val
         $("#lastName").setValue("Shilo");
         $("#userEmail").setValue("alim@mail.ru");
         $(byText("Female")).click();
