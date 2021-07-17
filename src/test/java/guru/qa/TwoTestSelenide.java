@@ -1,7 +1,6 @@
 package guru.qa;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selectors.byText;
@@ -20,4 +19,6 @@ public class TwoTestSelenide {
         //проверить что есть код junit5
         $("#wiki-body").shouldHave(Condition.text("Using JUnit5 extend test class"));
     }
+
+
 }
