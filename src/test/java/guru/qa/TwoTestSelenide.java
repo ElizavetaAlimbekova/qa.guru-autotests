@@ -14,8 +14,10 @@ public class TwoTestSelenide {
         open("https://github.com/selenide/selenide");
         //перейти в раздел wiki
         $(byText("Wiki")).click();
-        //найти в блоке Pages по тексту страницу SoftAssertions, открыть SoftAssertions
-        $("#wiki-body").$(byText("Soft assertions")).click();
+        //найти в блоке Pages по тексту страницу SoftAssertions,
+        $("#wiki-pages-filter").setValue("SoftAssertions");
+        //открыть SoftAssertions
+        $(".wiki-rightbar").find(byText("SoftAssertions")).click();
         //проверить что есть код junit5
         $("#wiki-body").shouldHave(Condition.text("Using JUnit5 extend test class"));
     }
