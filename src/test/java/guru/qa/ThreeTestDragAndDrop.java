@@ -9,13 +9,13 @@ import static com.codeborne.selenide.Selenide.open;
 public class ThreeTestDragAndDrop {
 
     @Test
-    void  DragAndDrop(){
+    void  dragAndDrop(){
         //открыть страницу https://the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
         //Выбрать треугольник А (#column-a)  и поменять местами с треугольников В (#column-b)
         $("#column-a").dragAndDropTo("#column-b");
         //Проверить что они поменялись
-        $("#column-a header").shouldHave(text("B"));
+        $("#column-a").shouldHave(text("B"));
 
 
     }
