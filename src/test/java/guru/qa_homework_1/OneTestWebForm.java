@@ -1,8 +1,6 @@
-package guru.qa;
+package guru.qa_homework_1;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

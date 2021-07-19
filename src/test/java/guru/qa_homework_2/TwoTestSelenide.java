@@ -1,4 +1,4 @@
-package guru.qa;
+package guru.qa_homework_2;
 
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
