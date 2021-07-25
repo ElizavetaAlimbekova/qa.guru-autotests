@@ -31,7 +31,7 @@ public class WebSteps {
 
     @Step("Проверяем, что есть название Issues")
     public WebSteps checkNameIssues() {
-        $ ("#issues-tab").find (byText ("Issue")).should (Condition.exist);
+        $ ("#issues-tab").find (byText ("Issues")).should (Condition.exist);
         return this;
     }
 }
