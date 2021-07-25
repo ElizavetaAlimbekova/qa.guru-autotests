@@ -1,2 +1,2 @@
 # qa.guru-autotests
-Прочти меня 
+Use me for homework
