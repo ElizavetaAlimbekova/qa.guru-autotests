@@ -1,4 +1,4 @@
-package guru.qa_homework_2;
+package guru_qa.homework_2;
 
 import org.junit.jupiter.api.Test;
 
