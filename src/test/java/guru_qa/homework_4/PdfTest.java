@@ -15,7 +15,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class PdfTest {
     @Test
-    void pdfTest() throws IOException {
+    void checkPdfFile() throws IOException {
 
     }
 
