@@ -6,6 +6,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
+
+//Проверка перемещения треугольников
 public class ThreeTestDragAndDrop {
 
     @Test
@@ -14,7 +16,7 @@ public class ThreeTestDragAndDrop {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         //Выбрать треугольник А (#column-a)  и поменять местами с треугольников В (#column-b)
         $("#column-a").dragAndDropTo("#column-b");
-        //Проверить что они поменялись
+        //Проверить что треугольники поменялись
         $("#column-a").shouldHave(text("B"));
 
 

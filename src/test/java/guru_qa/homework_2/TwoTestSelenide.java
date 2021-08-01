@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
+//проверка содержимого страницы
 public class TwoTestSelenide {
 
     @Test
