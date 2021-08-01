@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
+
 import java.io.*;
 
 
@@ -15,12 +16,12 @@ public class TextFileTest {
 
     @Test
     void checkTextFile() throws IOException {
+        String docFilePath = "./src/test/resources/files/File.doc";
+        String expectedData = "Check me please";
 
-        Selenide.open ("https://github.com/ElizavetaAlimbekova/qa.guru-autotests/blob/master/README.md");
-        File downloadedFile = $ ("#raw-url").download ();    //скачивание файла
+        String actualData = readTextFromPath(docFilePath);
 
-        String s = FileUtils.readFileToString (downloadedFile,"UTF-8");
-        Assertions.assertTrue (s.contains ("Use me for homework"));     //проверка содержимого файла
+
 
 
 
@@ -32,6 +33,7 @@ public class TextFileTest {
 
 
     }
+
 
 
 }

@@ -16,6 +16,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class PdfTest {
     @Test
     void checkPdfFile() throws IOException {
+        String pdfFilePath = "./src/test/resources/File.pdf";
+        String expectedData = "Table of Contents";
 
     }
 
