@@ -19,11 +19,6 @@ public class TextFileTest {
         String docFilePath = "./src/test/resources/files/File.doc";
         String expectedData = "Check me please";
 
-        String actualData = readTextFromPath(docFilePath);
-
-
-
-
 
 
 
